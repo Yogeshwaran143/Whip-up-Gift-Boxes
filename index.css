@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient( to bottom, rgb(0, 133, 241), pink);
+}
+
+.title {
+    height: 100vh;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_box{
+    width: 800px;
+    height: 490px;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input_box :is(h1, p, form) {
+    margin: 20px;
+}
+
+form input {
+    margin-bottom: 10px;
+    height: 40px;
+    width: 250px;
+    border: none;
+    outline: none;
+    border-radius: 10px 10px 10px 10px;
+    color: black;
+    font-size: large;
+    text-align: center;
+    background: rgb(255, 138, 202);
+    box-shadow: 2px 2px black;
+    margin: 20px;
+}
+
+.generate_buttion {
+    height: 40px;
+    width: 150px;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: small;
+    text-align: center;
+    box-shadow: 2px 2px black;
+    background: rgb(129, 252, 129);
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+input::placeholder {
+    color: black;
+    font-size: small;
+}
+
+.text-size {
+    font-size: 40px;
+    color: #4747ff;
+    color: rgba(255, 255, 0, 0.9);
+    text-shadow: 1px 4px 3px rgb(0, 133, 241), 0px 0px 0px #000, 1px 4px 6px rgb(0, 133, 241);
+}
+
+.output_box {
+    width: 700px;
+    height: 75%;
+    overflow: scroll;
+    background: white;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
